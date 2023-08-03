@@ -1,0 +1,181 @@
+--- !<tag:peterakey,20230731:weekly>
+
+ 
+
+day: Monday
+
+date: 2023-07-31
+
+ 
+
+billing-units:
+
+- number              : 118
+
+  title                      : ASDC
+
+  features:
+
+  - ticket : APB-1795 (MISR)
+
+    description     : Daily checks and resolutions
+
+    tasks  : |
+
+                Updated log book
+
+                Network outage is preventing access to grid engine and database
+
+  - ticket : APB-1561 (Terra Orbit Change)
+
+    description : MI1B1 granule request
+
+    tasks  : |
+
+                Document scripts and process for submitting distribution requests
+
+  - ticket : APB-1797 (MAIA)
+
+    description :
+
+  - ticket : APB-1798 (Mission Status, Meetings)
+
+    description : L1 Reprocessing Meeting w/ JPL
+
+- number              : 120
+
+  title                      : MAIA
+
+  features:
+
+  - description :
+
+ 
+
+---
+
+ 
+
+day                         : Tuesday
+
+date                       : 2023-08-01
+
+ 
+
+billing-units:
+
+- number              : 118
+
+  title                      : ASDC
+
+  features:
+
+  - ticket : APB-1795 (MISR)
+
+    description : Daily checks and resolutions
+
+    tasks  : |
+
+                Updated log book
+
+                Network outage is preventing access to grid engine and database
+
+  - ticket : APB-1561 (Terra Orbit Change)
+
+    description : MI1B1 granule request
+
+    tasks  : |
+
+                Finalize documentation and storage of scripts
+
+  - ticket : APB-1797
+
+    description : ASDC-related tasks for MAIA
+
+  - ticket : APB-1798
+
+    description : Mission status, meetings
+
+    tasks  : |
+
+                Team sync
+
+                Dev CoP
+
+- number              : 120
+
+  title                      : MAIA
+
+  features:
+
+  - description : Non-ASDC MAIA-related tasks
+
+    tasks  : |
+
+                JPL SDS meeting
+
+                Update file-submitter to work without access to Surface Monitor data
+
+ 
+
+---
+
+ 
+
+day                         : Wednesday
+
+date                       : 2023-08-02
+
+ 
+
+billing-units:
+
+- number              : 118
+
+  title                      : ASDC
+
+  features:
+
+  - ticket : APB-1795 (MISR)
+
+    description : Daily checks and resolutions
+
+    tasks  : |
+
+                Updated log book
+
+  - ticket : APB-1561 (Terra Orbit Change)
+
+    description : MI1B1 granule request
+
+    tasks  :
+
+  - ticket : APB-1797 (MAIA)
+
+    description : ASDC-related tasks for MAIA
+
+  - ticket : APB-1798
+
+    description : Mission status, meetings
+
+    tasks  : |
+
+                Team sync
+
+                SaMS ECS Archive system overview/discussion
+
+- number              : 120
+
+  title                      : MAIA
+
+  features:
+
+  - description : Non-ASDC MAIA-related tasks
+
+    tasks  : |
+
+                Discussion file-submitter design and goals with team
+
+                Open IT Ticket to get mountpoint on asdc-proxy
+
+
