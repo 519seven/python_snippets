@@ -52,11 +52,15 @@ class Weekly:
                                             self._pdebug(f"Inner loop g_day: {g_day}")
                                             for g_unit in g_day['billing-units']:
                                                 for feature in g_unit['features']:
-                                                    if feature['ticket'] == f_item['ticket']:
-                                                        try:
-                                                            print(feature['tasks'])
-                                                        except KeyError as ke:
-                                                            self._pdebug(f"Key Error in get_billing_units: {str(ke)}")
+                                                    try:
+                                                        if feature['ticket'] == f_item['ticket']:
+                                                            try:
+                                                                print(feature['tasks'])
+                                                            except KeyError as ke:
+                                                                self._pdebug(f"Key Error in get_billing_units: {str(ke)}")
+                                                    except KeyError:
+                                                        print(f"Fatal error. 'ticket' missing for {g_day['day']}: {feature}")
+                                                        sys.exit(1)
                             else:
                                 self._pdebug(f"Skipping unit {f_unit['number']}")
                 print()
@@ -86,7 +90,10 @@ class Weekly:
                             # assume hours exist, add to existing
                             cur_hours = time_summary[unit['number']]
                             new_hours = unit['hours']
-                            new_total = cur_hours + new_hours
+                            try:
+                                new_total = cur_hours + new_hours
+                            except TypeError:
+                                new_total = new_hours
                             time_summary[unit['number']] = new_total
                             self._pdebug(f"Hours: {time_summary[unit['number']]}")
         self._pdebug(f"time_summary: {time_summary}")
